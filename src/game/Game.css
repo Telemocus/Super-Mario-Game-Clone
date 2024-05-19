@@ -1,0 +1,101 @@
+.game{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #87ceeb;
+}
+
+.game-screen{
+     position: relative;
+     width: 800px;
+     height: 400px;
+     background-color: #6b8e23;
+     overflow: hidden;
+}
+
+.mario{
+     position: absolute;
+     bottom: 10px;
+     left: 50px;
+     width: 16px;
+     height: 32px;
+}
+
+/* Mario - hat */
+.mario::before{
+     content: ' ';
+     position: absolute;
+     width: 16px;
+     height: 4px;
+     background-color: red;
+     top: 0;
+     left: 0;
+}
+
+.mario::after{
+     content: ' ';
+     position: absolute;
+     width: 12px;
+     height: 4px;
+     background-color: red;
+     top: 4px;
+     left: 2px;
+}
+/* Marios Face */
+.mario .face{
+     position: absolute;
+     width: 16px;
+     height: 8px;
+     background-color: #ffcc00;
+     top: 8px;
+     left: 0;
+}
+
+
+/* Marios Body */
+.mario .body{
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     background-color: blue;
+     top: 8px;
+     left: 0;
+}
+
+/* Marios Legs */
+.mario .leg-left,
+.mario .leg-right{
+
+     position: absolute;
+     width: 6px;
+     height: 12px;
+     background-color: blue;
+     top: 24px;
+}
+
+.mario .leg-left{
+     left: 2px;
+}
+
+.mario .leg-right{
+     right: 2px;
+}
+
+/* Marios Arms */
+.mario .arm-left,
+.mario .arm-right{
+     position: absolute;
+     width: 6px;
+     height: 12px;
+     background-color: red;
+     top:16px;
+}
+
+.mario .arm-left{
+     left: -6px;
+}
+
+.mario .arm-right{
+     right: -6px;
+}
